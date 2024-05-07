@@ -16,6 +16,7 @@ User loginUser = (User)session.getAttribute("loginUser");
 <% if (loginUser != null) { %>
 	<p>ログインに成功しました</p>
 	<p>ようこそ<%= loginUser.getName() %>さん</p>
+	<a href="Main">つぶやき投稿・閲覧へ</a>
 <% } else { %>
 	<p>ログインに失敗しました</p>
 	<a href="index.jsp">TOPへ</a>
